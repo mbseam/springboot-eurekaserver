@@ -1,0 +1,5 @@
+TO INSTALL APPLICATION ON DOCKER
+
+mvn clean install
+docker build -t mb/eurekaserver .
+docker run -d -p 8761:8761 mb/eurekaserver
